@@ -1,0 +1,162 @@
+ .backmodal{
+  position:absolute; width:2000px; height:100%; 
+  background: rgba(50,0,0, 0.1);  
+  display:none;
+  top:0%; 
+  left:-30%; 
+  z-index:10001;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  }
+  .modal{ 
+  position:absolute; width:1000px; height:700px; 
+  background: rgba(255, 200, 250, 0.8); 
+  top:200px; 
+  left:23%; 
+  display:none;
+  z-index:10002;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 80px / 40px;
+}
+  .modal_content h2{
+  display: inline;
+  color: white;
+  margin: 15px;
+  }
+  .ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+h2 {
+  height: 100px;
+}
+
+h2 span {
+  position: relative;
+  margin-top:30px;
+  top: 10px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-family: 'Titan One', cursive;
+  font-size: 40px;
+  color: #FFF;
+  text-shadow: 0 1px 0 #CCC,
+               0 2px 0 #CCC,
+               0 3px 0 #CCC,
+               0 4px 0 #CCC,
+               0 5px 0 #CCC,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .4);
+}
+
+h2 span:nth-child(2) { animation-delay: .1s; }
+h2 span:nth-child(3) { animation-delay: .2s; }
+h2 span:nth-child(4) { animation-delay: .3s; }
+h2 span:nth-child(5) { animation-delay: .4s; }
+h2 span:nth-child(6) { animation-delay: .5s; }
+h2 span:nth-child(7) { animation-delay: .6s; }
+h2 span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+  100% {
+    top: -10px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 #CCC,
+                 0 7px 0 #CCC,
+                 0 8px 0 #CCC,
+                 0 9px 0 #CCC,
+                 0 50px 25px rgba(0, 0, 0, .2);
+  }
+}
+
+.filebox {display:inline-block; margin-right: 10px;
+position:absolute; 
+ height:40px; 
+ width:50px; 
+ right:100px; 
+ bottom:20px;}
+
+
+.filebox label {
+  display: inline-block;
+  padding: .5em .75em;
+  color: black;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: .25em;
+}
+
+.filebox input[type="file"] {  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+.filebox.bs3-primary label {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.filebox.bs3-success label {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}

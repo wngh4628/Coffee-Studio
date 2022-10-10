@@ -1,0 +1,15 @@
+.iconSelected{
+  filter: brightness(30%)opacity(0.5) drop-shadow(0 0 0 #000000);
+  margin-right:10px;
+  margin-bottom:2px;
+}
+.icon{
+  filter: brightness(300%)opacity(0.2) drop-shadow(0 0 0 #000000);
+  margin-right:10px;
+  margin-bottom:2px;
+}
+.iconDark{
+  filter: brightness(20%)opacity(0.2) drop-shadow(0 0 0 #000000);
+  margin-right:10px;
+  margin-bottom:2px;
+}

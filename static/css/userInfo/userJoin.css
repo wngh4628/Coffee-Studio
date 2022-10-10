@@ -1,0 +1,21 @@
+
+.userJoinOuter{
+  display: flex; 
+  align-items: center;
+  }
+#userJoinInner{
+  margin:auto; 
+  margin-top:50px;
+}
+#id_input_re_1{
+  color: #615DFA; 
+  display: none;
+}
+#id_input_re_2{
+  color: red; 
+  display: none;
+}
+#joinBtn{
+  width:356px; 
+  height:54px;
+}

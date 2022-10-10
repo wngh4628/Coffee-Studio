@@ -1,0 +1,37 @@
+@charset "UTF-8";
+*{margin:0; padding:0;}
+
+
+.modal-con{
+position: fixed;
+  display:none;
+  left:30%;
+  background:#fff;
+ 
+}
+.modal-con .noticetitle{
+  font-size:20px; 
+  padding: 20px; 
+  font-family: emoji;
+  color: white;
+  background : #42c2f5;
+}
+.modal-con .warntitle{
+  font-size:20px; 
+  padding: 20px; 
+  font-family: emoji;
+  background : #9c0610;
+}
+.modal-con .con{
+  font-size:15px; line-height:1.3;
+  padding: 30px;
+}
+.modal-con .modalclose{
+  display:block;
+  position:absolute;
+  width:30px; height:30px;
+  text-align:center; line-height: 30px;
+  text-decoration:none;
+  color:#000; font-size:20px; font-weight: bold;
+  right:10px; top:10px;
+}
